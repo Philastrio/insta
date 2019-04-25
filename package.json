@@ -1,0 +1,26 @@
+{
+  "name": "insta",
+  "version": "1.0.0",
+  "description": "인스타그램 만들어보기",
+  "repository": "https://github.com/philastrio/insta",
+  "author": "HanKang <han_gang@naver.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "dotenv": "^7.0.0",
+    "graphql-tools": "^4.0.4",
+    "graphql-yoga": "^1.17.4",
+    "merge-graphql-schemas": "^1.5.8",
+    "morgan": "^1.9.1",
+    "prisma": "^1.26.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  },
+  "scripts": {
+    "deploy": "prisma deploy",
+    "dev": "nodemon --exec babel-node src/server.js"
+  }
+}
