@@ -9,7 +9,7 @@ export default {
       if (user.loginSecret === secret) {
         return generateToken(user.id);
       } else {
-        throw Error("Wrong emails or Passwrod");
+        throw Error("## Wrong emails or Passwrod ##");
       }
     }
   }
