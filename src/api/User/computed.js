@@ -9,7 +9,7 @@ export default {
       const { user } = request;
       const { id: parentId } = parent;
       try {
-        return (exists = await prisma.$exists.user({
+        return prisma.$exists.user({
           AND: [
             {
               id: user.id
@@ -18,7 +18,7 @@ export default {
               following_some: { id: parent.id }
             }
           ]
-        }));
+        });
       } catch (error) {
         console.log(error);
         return false;
@@ -31,20 +31,16 @@ export default {
     }
   },
   Post: {
-    isLiked: async (parent, _, { request }) => {
+    isLiked: (parent, _, { request }) => {
       const { user } = request;
       const { id } = parent;
       return prisma.$exists.like({
-        And: [
+        AND: [
           {
-            user: {
-              id: user.id
-            }
+            user: { id: user.id }
           },
           {
-            post: {
-              id
-            }
+            post: { id }
           }
         ]
       });
