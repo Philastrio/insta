@@ -16,10 +16,10 @@ Instragram clone with Express + Prisma + React and React Native
 - [x] Edit my profile
 - [x] See user profile
 - [x] See MY profile
-- [ ] See the full photo
-- [ ] Upload a photo
-- [ ] Edit the photo (Delete)
-- [ ] See the feed
+- [x] See the full photo
+- [x] Upload a photo
+- [x] Edit the photo (Delete)
+- [x] See the feed
 - [ ] Send private Message
 - [ ] See rooms
 - [ ] See room
