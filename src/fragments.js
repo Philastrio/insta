@@ -17,7 +17,7 @@ export const FILE_FRAGMENT = `
     url
 `;
 
-export const FULL_POST_FRAGMENT = `
+/* export const FULL_POST_FRAGMENT = `
   fragment PostParts on Post {
     id
     location
@@ -32,7 +32,7 @@ export const FULL_POST_FRAGMENT = `
       ${USER_FRAGMENT}
     }
   }
-`;
+`; */
 
 export const MESSAGE_FRAGMENT = `
   id
