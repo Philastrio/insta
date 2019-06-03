@@ -29,7 +29,7 @@ export default {
         .count(),
     commentCount: parent =>
       prisma
-        .commentConnection({
+        .commentsConnection({
           where: { post: { id: parent.id } }
         })
         .aggregate()
