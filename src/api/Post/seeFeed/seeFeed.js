@@ -12,7 +12,8 @@ export default {
           user: {
             id_in: [...following.map(user => user.id), user.id]
           }
-        }
+        },
+        orderBy: "caption_DESC"
         /* orderBy: "createdAt_DESC" 정렬하는 것을 추가해야 하는데... 추후에 확인하기*/
       });
     }
