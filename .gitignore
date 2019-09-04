@@ -77,7 +77,7 @@ typings/
 
 # Prisma
 generated
-prisma.yml
+
 
 # Nest JS
 .next
